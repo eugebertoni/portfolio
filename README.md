@@ -10,7 +10,7 @@ sass --watch assets/styles/style.scss:style.css
 > All assets file like images , javascripts , scss including third-party libraries will be in the `assets` folder. Only markup files ( .html , .php , .rb , .asp ...) and main style sheet ( style.css which will come in after compiling scss files ).
 
 
-# Assets directory difination
+# Assets directory definition
 
 * **image/** - Contains all images
 * **plugins/** - All third-party libraries like wow.js , animate.css , bootstrap will be here. By default this framework included 4 libraries. They are -
