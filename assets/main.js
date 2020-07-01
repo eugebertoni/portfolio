@@ -139,16 +139,17 @@ $(document).ready(function(){
 });
 
 
-//
-  $("document").ready(function () {
+// -----------------------------------------------------------------------------
+// Offtet section
+// -----------------------------------------------------------------------------
 
-        $('.navbar li a[href="#about"]').click(function () {
+$("document").ready(function () {
 
-            $('html, body').animate({
-                scrollTop: $("#about").offset().top - 230
-            }, 100);
+    $('.navbar li a[href="/portfolio/#about"]').click(function () {
 
-        });
-
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 230
+        }, 100);
 
     });
+});
