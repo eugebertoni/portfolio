@@ -1,0 +1,64 @@
+.storyboard{
+	list-style: none;
+	padding: 0;
+	display: flex;
+    justify-content: space-between;
+	li{
+		list-style-type: none;
+		width: calc(20% - 30px);
+		position: relative;
+		&:after{
+			content: "\f061";
+			color: $brand-color;
+			font-family: "Font Awesome 5 Pro";
+    		position: absolute;
+    		right: 0;
+    		font-weight: 600;
+    		top: 30%;
+		}
+		&:last-child{
+			&:after{
+				content: none;
+			}
+		}
+		img{
+			max-width: 70%;
+			max-height: 120px;
+		}
+		h5{
+			font-size: 1rem;
+		}	
+		p{
+			font-size: 0.9rem;
+		}
+	}
+}
+
+.key-screens{
+	list-style: none;
+	padding: 0;
+	display: flex;
+    justify-content: space-between;
+	li{
+		list-style-type: none;
+		width: calc(20% - 30px);
+		position: relative;
+		text-align: center;
+		margin-right: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		&:last-child{
+			margin-right: 0;
+		}
+		i{
+			color: $brand-color;
+		}
+
+		h5{
+			font-size: 0.7rem;
+			margin-top: 10px;
+			text-transform: uppercase;
+		}	
+	}
+}

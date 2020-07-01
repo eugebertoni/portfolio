@@ -1,0 +1,22 @@
+.about{
+	h2{
+		font-weight: 800;
+	}
+	cite{
+		display: block;
+		text-align: right;
+		position: relative;
+		padding-top: 15px;
+		&:before{
+			content: "";
+			width: 60px;
+			height: 1px;
+			background: #000;
+			opacity: .4;
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+	}
+}

@@ -1,0 +1,74 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.home{
+	.hero-area {
+		margin-bottom: 0;
+		min-height: calc(100vh + 200px);
+    	height: calc(100vh + 200px);
+    	@include media-width(650){ 
+	        min-height: calc(80vh + 200px);
+    		height: calc(80vh + 200px);
+	    }
+		.hero-content {
+			margin: 100px auto;
+			h1{
+				font-size: 5em;
+				line-height: 110%;
+				@include media-width(1109){font-size: 5em;}
+	            @include media-width(932){font-size: 4em;}
+	            @include media-width(754){font-size: 3.5em;}
+	            @include media-width(600){font-size: 2.5em;}
+			}
+			p {
+			    font-size: 1.5em;
+			    line-height: 150%;
+			    @include media-width(600){font-size: 1.3em;}
+			}	
+		}
+		.scroll-indicator{
+			position: relative;
+			bottom: 0;
+			margin-top: 50px;
+		}
+	}
+	#about,
+	#contact{
+		.parallax{
+			min-height: 70vh;
+    		height: 70vh;
+    	}
+	}
+	.about{
+		background: $brand-color;		
+		padding: 100px 100px;
+	    position: absolute;
+	    top: -300px;
+	    z-index: 2;
+	    text-align: center;	
+	    @include media-width(754){padding: 40px;}
+		p{
+			color: #fff;
+		    text-align: center;
+		    font-size: 1.5rem;
+		    @include media-width(600){font-size: 1em;}	
+		}
+	}
+	#portfolio{
+		background: #54596A;
+		color: #fff;
+	}
+	.contact{
+		background: #353B4E;		
+		padding: 100px;
+	    position: absolute;
+	    top: -300px;
+	    z-index: 2;
+	    text-align: center;
+	    width: 100%;
+
+		p{
+			color: #fff;	
+		}
+	}
+}

@@ -1,0 +1,13 @@
+.navbar-dark{
+	position: absolute;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    .nav-link{
+		font-size: 0.7rem;
+	    letter-spacing: 2px;
+	    text-transform: uppercase;
+	    font-weight: 500;
+	    padding: 1rem;
+	}
+}
